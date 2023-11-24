@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anggaran Pembuatan Komputer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #budget-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin-bottom: 20px; /* Tambahkan margin bottom agar ada ruang sebelum tabel */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #808080;
+            color: #000;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4caf50;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="budget-form">
+        <h2>Input Anggaran</h2>
+        <form action="#" method="post">
+            <label for="budget">Anggaran Anda:</label>
+            <input type="number" id="budget" name="budget" placeholder="Masukkan anggaran dalam USD" required>
+
+            <label for="usage">Penggunaan Anggaran:</label>
+            <select id="usage" name="usage" required>
+                <option value="" disabled selected>Pilih penggunaan anggaran</option>
+                <option value="komponen">Pembelian Komponen</option>
+                <option value="peripheral">Pembelian Peripheral</option>
+                <option value="upgrade">Upgrade Komputer</option>
+                <option value="lainnya">Lainnya</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <table>
+        <tr>
+            <th>Spesifikasi</th>
+            <th>Harga</th>
+        </tr>
+        <tr>
+            <td>Prosesor</td>
+            <td>$200</td>
+        </tr>
+        <tr>
+            <td>RAM</td>
+            <td>$50</td>
+        </tr>
+        <!-- Tambahkan baris lain sesuai kebutuhan -->
+    </table>
+
+</body>
+</html>
